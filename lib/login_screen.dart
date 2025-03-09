@@ -72,7 +72,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 SizedBox(height: 20),
                 TextField(
-                  controller: _usernameController,
+                  keyboardType: TextInputType.emailAddress,
+                  controller: _usernameController..text = 'emilys',
+                  style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     labelText: 'Your E-Mail',
                     labelStyle: TextStyle(color: Colors.white70),
@@ -82,7 +84,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 SizedBox(height: 10),
                 TextField(
-                  controller: _passwordController,
+                  controller: _passwordController..text = 'emilyspass',
+                  style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     labelText: 'Password',
                     labelStyle: TextStyle(color: Colors.white70),
