@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'config/assets.dart'; // Import the assets file
 
 void main() {
   runApp(MyApp());
@@ -51,7 +52,7 @@ class MainScreen extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/background_main_screen.png'),
+                    image: AssetImage(Assets.backgroundMainScreen), // Use static variable
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -80,7 +81,7 @@ class MainScreen extends StatelessWidget {
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/background_match_result.png'),
+                    image: AssetImage(Assets.backgroundMatchResult), // Use static variable
                     fit: BoxFit.cover,
                   ),
                   color: Colors.black.withOpacity(0.6), // Semi-transparent overlay
@@ -96,14 +97,14 @@ class MainScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset('assets/blazing_falcons_logo.png', width: 50),
+                        Image.asset(Assets.blazingFalconsLogo, width: 50), // Use static variable
                         SizedBox(width: 8),
                         Text(
                           '2 - 0',
                           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(width: 8),
-                        Image.asset('assets/shadow_strikers_logo.png', width: 50),
+                        Image.asset(Assets.shadowStrikersLogo, width: 50), // Use static variable
                       ],
                     ),
                   ],
@@ -116,7 +117,7 @@ class MainScreen extends StatelessWidget {
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/background_create_team.png'),
+                    image: AssetImage(Assets.backgroundCreateTeam), // Use static variable
                     fit: BoxFit.cover,
                   ),
                   color: Colors.black.withOpacity(0.6), // Semi-transparent overlay
@@ -152,7 +153,7 @@ class MainScreen extends StatelessWidget {
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/background_existing_teams.png'),
+                    image: AssetImage(Assets.backgroundExistingTeams), // Use static variable
                     fit: BoxFit.cover,
                   ),
                   color: Colors.black.withOpacity(0.6),
@@ -186,7 +187,7 @@ class MainScreen extends StatelessWidget {
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/background_coming_match.png'),
+                    image: AssetImage(Assets.backgroundComingMatch), // Use static variable
                     fit: BoxFit.cover,
                   ),
                   color: Colors.black.withOpacity(0.6),
@@ -202,14 +203,14 @@ class MainScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset('assets/blazing_falcons_logo.png', width: 50),
+                        Image.asset(Assets.blazingFalconsLogo, width: 50), // Use static variable
                         SizedBox(width: 8),
                         Text(
                           'Football Match | 8:00 AM',
                           style: TextStyle(color: Colors.white),
                         ),
                         SizedBox(width: 8),
-                        Image.asset('assets/shadow_strikers_logo.png', width: 50),
+                        Image.asset(Assets.shadowStrikersLogo, width: 50), // Use static variable
                       ],
                     ),
                     SizedBox(height: 8),
